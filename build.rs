@@ -12,12 +12,12 @@ fn main() {
         // })
         // .prepend_enum_name(default) // default: true
         // .translate_enum_integer_types(true)
-        .constified_enum_module("game")
-        .bitfield_enum("animal")
-        .newtype_enum("planet")
-        .rustified_enum("color")
-        // .rustified_non_exhaustive_enum("color")
-        // .constified_enum("meals")
+        // .constified_enum_module("game")
+        // .rustified_non_exhaustive_enum("game")
+        // .rustified_enum("game")
+        .constified_enum("game")
+        // .newtype_enum("game")
+        // .bitfield_enum("game")
         .generate()
         .expect("Unable to generate bindings");
 
